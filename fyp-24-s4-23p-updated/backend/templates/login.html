@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBot</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><span>C</span>ure<span>M</span>ate.</a>
+        
+		<!--
+            <nav class="nav">
+                <ul>
+                    <li><a href="#login">login</a></li>
+                    <li><a href="#register">register</a></li>
+                </ul>
+            </nav>
+		-->
+        
+            <div class="fas fa-bars"></div>
+        </div> 
+		
+    </header>
+	
+	<section class="login" id="login">
+        
+			<div class="container min-vh-100">
+        
+            <div class="row justify-content-center">
+ 
+                <div class="col-md-6 content" data-aos="fade-right">
+					
+					<h1 class="heading">Login</h1>
+
+                    <form action="/login" method="POST">
+        
+                        <div class="inputBox">
+						    <label for="username"></label>
+							<input type="text" placeholder="username" name="username" id="username" required>
+                        </div>
+                        <div class="inputBox">
+						    <label for="password"></label>
+							<input type="password" placeholder="password" name="password" id="password" required>
+                        </div>
+                        <input type="submit" name="" id="" value="Login" class="button">
+						{% if error %}
+						<h1>{{ error }}</h1>
+						{% endif %}
+						<h1>Don't have an account? <a href="/register">Register here</a></h1>
+						
+                     </form>
+
+				</div>
+
+            </div>
+        
+        </section>
+        
+        <!-- login section ends -->
+	
+	    <!-- footer section starts  -->
+        
+        <section class="footer">
+		
+			<h1 class="credit text-center mx-auto">created by <span>FYP-24-S4-23P</span>.</h1>
+			<h4 class="credit text-center mx-auto">&copy; 2024 CureMate. All Rights Reserved.</h4>
+        
+        </section>
+        
+        <!-- footer section ends -->
+		
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script>
+    AOS.init({
+        duration:1000,
+        delay:400
+    });
+    </script>
+</body>
+</html>

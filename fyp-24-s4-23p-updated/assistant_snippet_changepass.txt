@@ -1,0 +1,11 @@
+1|U: *clicks Change Password button*
+2|C: *shows modal with form*
+3|
+4|U: *fills form*
+5|Current Password: ****
+6|New Password: ********
+7|Confirm Password: ********
+8|
+9|U: *clicks Submit*
+10|C: "Password changed successfully!"
+11|*modal closes* 

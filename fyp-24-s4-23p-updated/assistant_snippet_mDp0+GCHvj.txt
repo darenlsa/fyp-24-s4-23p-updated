@@ -1,0 +1,22 @@
+1|U: "I want to schedule an appointment"
+2|C: "Please provide the following information: preferred date, preferred time, preferred doctor"
+3|
+4|U: "Tomorrow at 9:00 AM with Dr. Smith"
+5|C: "✅ Great! Let me confirm your appointment details:
+6|
+7|👨‍⚕️ Doctor: Dr. Smith
+8|📅 Date: [tomorrow's date]
+9|⏰ Time: 9:00 AM
+10|📋 Type: General Checkup
+11|💵 Cost: $150.00
+12|
+13|Would you like me to proceed with booking this appointment?"
+14|
+15|U: "Yes"
+16|C: "✅ Your appointment has been confirmed!
+17|
+18|Appointment details have been sent to your email.
+19|Would you like me to:
+20|1. Set a reminder
+21|2. Add it to your calendar
+22|3. View appointment details" 
